@@ -1,6 +1,10 @@
 function listAllValues(obj) {
   // your code here
-  
+  let result = [];
+  for (let element in obj) {
+    result.push(obj[element]);
+  }
+  return result;
 }
 
 let output = listAllValues({ name: 'Sam', age: 25, hasPets: true });

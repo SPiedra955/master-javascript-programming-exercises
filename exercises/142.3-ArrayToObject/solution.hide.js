@@ -14,7 +14,7 @@ function transformEmployeeData(array) {
 let output = transformEmployeeData([
   [
     ['firstName', 'Joe'],
-    ['lastName', 'Blow'],
+    ['lastName', 'Blow'], 
     ['age', 42],
     ['role', 'clerk'],
   ],

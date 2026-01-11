@@ -16,7 +16,16 @@ let customerData = {
 function greetCustomer(firstName) {
   let greeting = '';
   // your code here
-	
+  for (let name in customerData) {
+    // console.log(customerData[name].visits)
+    if (!(customerData[firstName])) {
+      greeting = "Welcome! Is this your first time?";
+    } else if (customerData[firstName].visits === 1) {
+      greeting = `Welcome back, ${firstName}! We're glad you liked us the first time!`;
+    } else {
+      greeting = `Welcome back, ${firstName}! So glad to see you again!`
+    }
+  }
   return greeting;
 }
 

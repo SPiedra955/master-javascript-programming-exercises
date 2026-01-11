@@ -1,6 +1,14 @@
 function flipEveryNChars(input, n) {
     // your code here
-    
+    let result = '';
+
+    for (let i = 0; i < input.length; i += n) {
+        if (i + 1 < input.length) {
+            let chunk = input.slice(i, i + n);
+            result += chunk.split('').reverse().join('');;
+        } 
+    }
+    return result;
 }
 
 let input = 'a short example';

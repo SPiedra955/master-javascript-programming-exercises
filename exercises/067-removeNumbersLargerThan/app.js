@@ -6,5 +6,13 @@ let obj = {
 
 function removeNumbersLargerThan(num, obj) {
     // your code here
-    
+    for (let x in obj) {
+        if (obj[x] > num) {
+            delete obj[x];
+        }
+    }
+    return obj
 }
+
+removeNumbersLargerThan(5, obj);
+console.log(obj); // --> { b: 2, c: 'montana' }
